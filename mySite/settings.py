@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-y43*k=em8)(jsl#q0#=exdh$iledj!4kb&7h6p3g^(bcu!z$v@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-mahmud1223-djweb-q4tfnpor32k.ws-us100.gitpod.io/']
 
 
 # Application definition
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
